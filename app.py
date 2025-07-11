@@ -9,6 +9,9 @@ from langchain.schema.runnable import RunnableLambda, RunnableSequence
 
 load_dotenv()
 os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
+os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
+os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
+
 
 
 llm = ChatGoogleGenerativeAI(model="gemini-2.0-flash", temperature=0.3)
