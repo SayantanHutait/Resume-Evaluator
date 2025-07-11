@@ -8,9 +8,7 @@ from langchain_community.document_loaders import WebBaseLoader
 from langchain.schema.runnable import RunnableLambda, RunnableSequence
 
 load_dotenv()
-os.environ["GOOGLE_API_KEY"] = os.getenv("GOOGLE_API_KEY")
-os.environ["LANGSMITH_API_KEY"] = os.getenv("LANGSMITH_API_KEY")
-os.environ["LANGSMITH_TRACING"] = os.getenv("LANGSMITH_TRACING")
+
 
 
 
